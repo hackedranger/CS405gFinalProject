@@ -1,0 +1,9 @@
+/* Team 16 Bookstore (main.css)
+   Author: Ben Holzhauer
+   Class: CS 405G-001        */
+
+#results th:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
