@@ -12,7 +12,7 @@ if(isset($_POST['email'])){
 if(isset($_POST['password'])){
     $password= $_POST['password'];
 }
-$recordPrep=$conn->prepare("SELECT * FROM book_db.users");
+$recordPrep=$conn->prepare("SELECT * FROM bgho224.users");
 try{
     $recordPrep->execute();
 }
