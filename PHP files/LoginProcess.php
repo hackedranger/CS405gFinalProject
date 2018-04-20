@@ -12,7 +12,7 @@ if(isset($_POST['email'])){
 if(isset($_POST['password'])){
     $password= $_POST['password'];
 }
-$recordPrep=$conn->prepare("SELECT * FROM bgho224.users");
+$recordPrep=$conn->prepare("SELECT * FROM book_db.users");
 try{
     $recordPrep->execute();
 }
@@ -25,12 +25,10 @@ foreach($record as $r){
     $loginEmail = $r['email'];
     $loginPassword = $r['password'];
     $role = $r['role'];
+    $userID = $r['UID'];
     if($email == $loginEmail && $password == $loginPassword){
-        header("Location: storefront.html");
-        if($role == 'Manager'){
-            $_SESSION['username']=$email;
-            $_SESSION['role']=$role;
-        }
+        $_SESSION['role']=$role;
+        $_SESSION['userId']=$userID;
     }
     else{
         echo "Invalid Login";
