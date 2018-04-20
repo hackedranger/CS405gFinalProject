@@ -47,7 +47,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/~bgho224/CS405G/web-app/review">Review</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="historyNav" class="nav-item">
                         <a class="nav-link" href="/~bgho224/CS405G/web-app/history">History</a>
                     </li>
                     <li id="manageNav" class="nav-item" style="display: none">
@@ -64,12 +64,12 @@
                 <div class="form-group">
                     <input type="text" class="form-control" id="searchWords" name="searchWords" placeholder="SEARCH" required>
                     <select class="form-control" id="searchTerm" name="searchTerm" required>
-                        <option value="name">Title</option>
-                        <option value="author">Author</option>
-                        <option value="pubDate">Date Published</option>
-                        <option value="subject">Subject</option>
-                        <option value="price">Max Price</option>
-                        <option value="keyword">Keyword</option>
+                        <option value="b.name">Title</option>
+                        <option value="a.author">Author</option>
+                        <option value="b.pubDate">Date Published</option>
+                        <option value="b.subject">Subject</option>
+                        <option value="b.price">Max Price</option>
+                        <option value="k.keyword">Keyword</option>
                     </select>
                 </div>
                 <input type="hidden" name="searchForm">
@@ -80,39 +80,17 @@
                 <thead>
                     <tr>
                         <th>ISBN</th>
-                        <th id="name">Book Title</th>
-                        <th id="author">Author</th>
+                        <th id="b.name">Book Title</th>
+                        <th id="a.author">Author</th>
                         <th>Publisher</th>
-                        <th id="pubDate">Date Published</th>
-                        <th id="subject">Subject</th>
-                        <th id="price">Price</th>
+                        <th id="b.pubDate">Date Published</th>
+                        <th id="b.subject">Subject</th>
+                        <th id="b.price">Price</th>
                         <th># In Stock</th>
-                        <th id="keyword">Keywords</th>
+                        <th id="k.keyword">Keyword</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1234</td>
-                        <td>The first book</td>
-                        <td>John Smith</td>
-                        <td>Wing Press</td>
-                        <td>09/20/1996</td>
-                        <td>Dogs</td>
-                        <td>$10.00</td>
-                        <td>1</td>
-                        <td>dogs, pets</td>
-                    </tr>
-                    <tr>
-                        <td>5678</td>
-                        <td>The second book</td>
-                        <td>Kurt Smith</td>
-                        <td>NYC</td>
-                        <td>12/22/2000</td>
-                        <td>Mathematics</td>
-                        <td>$15.00</td>
-                        <td>2</td>
-                        <td>school, math</td>
-                    </tr>
                 </tbody>
             </table>
         </div>

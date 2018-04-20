@@ -47,7 +47,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/~bgho224/CS405G/web-app/review">Review</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="historyNav" class="nav-item">
                         <a class="nav-link" href="/~bgho224/CS405G/web-app/history">History</a>
                     </li>
                     <li id="manageNav" class="nav-item" style="display: none">
@@ -78,7 +78,7 @@
                 <h5>Add book</h5>
                 <div class="form-group">
                     <label for="isbn">ISBN*</label>
-                    <input type="text" class="form-control" id="isbn" name="isbn" maxlength=13 placeholder="ISBN" required>
+                    <input type="text" class="form-control" id="isbn" name="isbn" maxlength=10 placeholder="ISBN" required>
                 </div>
                 <div class="form-group">
                     <label for="name">Book Title*</label>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject*</label>
-                    <input type="text" class="form-control" id="subject" name="subject" maxlength=20 placeholder="PUBLISHER" required>
+                    <input type="text" class="form-control" id="subject" name="subject" maxlength=20 placeholder="SUBJECT" required>
                 </div>
                 <div class="form-group">
                     <label for="summary">Summary</label>
@@ -125,7 +125,7 @@
                 </div>
                 <div class="form-group">
                     <label for="isbn">ISBN</label>
-                    <input type="text" class="form-control" id="isbn" name="isbn" maxlength=13 placeholder="ISBN">
+                    <input type="text" class="form-control" id="isbn" name="isbn" maxlength=10 placeholder="ISBN">
                 </div>
                 <div class="form-group">
                     <label for="name">Book Title</label>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject</label>
-                    <input type="text" class="form-control" id="subject" name="subject" maxlength=20 placeholder="PUBLISHER">
+                    <input type="text" class="form-control" id="subject" name="subject" maxlength=20 placeholder="SUBJECT">
                 </div>
                 <div class="form-group">
                     <label for="summary">Summary</label>
@@ -167,7 +167,7 @@
                 <h5>Delete book</h5>
                 <div class="form-group" <label for="book">Book*</label>
                     <select class="form-control" id="book" name="book" required>
-                        <option>Some book - Some author</option>
+                        <option>BOOK - AUTHOR</option>
                     </select>
                 </div>
                 <input type="hidden" name="deleteBook">
@@ -178,7 +178,7 @@
                 <h5>Add keyword</h5>
                 <div class="form-group" <label for="book">Book*</label>
                     <select class="form-control" id="book" name="book" required>
-                        <option>Some book - Some author</option>
+                        <option>BOOK - AUTHOR</option>
                     </select>
                 </div>
                 <div class="form-group">

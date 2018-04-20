@@ -7,3 +7,9 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+#historyTable th:hover
+{
+	cursor: pointer;
+	text-decoration: underline;
+}
